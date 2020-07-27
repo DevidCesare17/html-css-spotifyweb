@@ -1,0 +1,78 @@
+/* GENERAL */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: white; /*RIMUOVERE*/
+}
+
+.wrapper{
+  height: 100vh;
+}
+/* /GENERAL */
+
+/* MAIN */
+.main_section{
+  display: flex;
+  height: calc(100% - 80px);
+}
+
+.navbar_list{
+  position: relative;
+  width: 200px;
+  height: 100%;
+  background-color: #000000;
+}
+.logo{
+  background-color: brown;
+}
+.main_list{
+  background-color: red;
+}
+.playlist_list{
+  background-color: green;
+}
+.profile_link{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: lightgrey;
+}
+
+.artist_section{
+  height: 100%;
+  width: calc(100% - 200px);
+  background-color: #141922;
+}
+.banner_upgrade{
+  height: 80px;
+  background-color: #080B12;
+}
+.btn_upgrade_fixed{
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80px;
+  width: calc(100% - 200px);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-right: 20px;
+}
+/* /MAIN */
+
+/* FOOTER */
+.song_row{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  background-color: #282828;
+  padding: 15px;
+}
+/* /FOOTER */
