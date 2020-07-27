@@ -17,6 +17,7 @@
   height: calc(100% - 80px);
 }
 
+/* navbar laterale sx */
 .navbar_list{
   position: relative;
   width: 200px;
@@ -39,16 +40,15 @@
   width: 100%;
   background-color: lightgrey;
 }
+/* /navbar laterale sx */
 
+/* sezione musica e artisti */
 .artist_section{
   height: 100%;
   width: calc(100% - 200px);
   background-color: #141922;
 }
-.banner_upgrade{
-  height: 80px;
-  background-color: #080B12;
-}
+
 .btn_upgrade_fixed{
   position: fixed;
   top: 0;
@@ -58,9 +58,17 @@
   align-items: center;
   height: 80px;
   width: calc(100% - 200px);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #080B12;
   padding-right: 20px;
 }
+
+.music_choose{
+  height: calc(100% - 80px);
+  overflow-y: auto;
+  margin-top: 80px;
+  padding: 20px;
+}
+/* /sezione musica e artisti */
 /* /MAIN */
 
 /* FOOTER */
