@@ -45,6 +45,8 @@ a{
 .navbar_list{
   width: 200px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
   background-color: #000000;
   font-size: 14px;
   padding: 15px;
@@ -84,7 +86,7 @@ a{
   margin-right: 10px;
 }
 .library_li::before{
-  content: "\f02d";f0fe
+  content: "\f02d";
   display: inline-block;
   font-family: "Font Awesome 5 Free";
   font-size: 18px;
@@ -94,7 +96,7 @@ a{
 }
 
 .playlist{
-  height: calc(100% - 193px);
+  height: 100%;
   background-color: green;
 }
 
@@ -115,13 +117,12 @@ a{
 }
 
 .profile_link{
-  height: 60px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: lightgrey;
-  padding: 0 10px;
+  padding: 10px 0;
 }
 /* /navbar laterale sx */
 
@@ -130,6 +131,12 @@ a{
   height: 100%;
   width: calc(100% - 200px);
   background-color: #141922;
+  overflow-y: auto;
+}
+
+.under_upgrade{
+  height: 80px;
+  background-color: #080B12;
 }
 
 .btn_upgrade_fixed{
@@ -141,7 +148,7 @@ a{
   align-items: center;
   height: 80px;
   width: calc(100% - 200px);
-  background-color: #080B12;
+  background-color: rgba(0, 0, 0, 0.5);
   padding-right: 40px;
 }
 
@@ -152,13 +159,11 @@ a{
   padding: 5px 10px;
 }
 .btn_upgrade_fixed a:hover{
-  background-color: #ffffff;
-  color: #080B12;
+  font-size: 16px;
 }
 
 .music_choose{
   height: calc(100% - 80px);
-  overflow-y: auto;
   margin-top: 80px;
   padding: 20px;
 }
