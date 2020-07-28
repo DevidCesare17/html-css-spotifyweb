@@ -85,8 +85,14 @@ a{
   color: #ffffff;
 }
 
-.logo img{
+.logo_classic{
   max-width: 130px;
+  height: auto;
+}
+
+.logo_small{
+  display: none;
+  width: 100%;
   height: auto;
 }
 
@@ -245,7 +251,7 @@ a{
 .player_brano{
   display: flex;
   align-items: center;
-  width: 200px;
+  width: 40%;
 }
 
 .player_brano_img img{
@@ -274,6 +280,7 @@ a{
 }
 
 .player{
+  width: 60%;
   text-align: center;
 }
 
@@ -297,6 +304,8 @@ a.player_icon:hover{
 }
 
 .player_volume{
+  width: 40%;
+  text-align: right;
   line-height: 50px;
   font-size: 12px;
 }
@@ -304,7 +313,7 @@ a.player_icon:hover{
 
 .row_hr{
   height: 4px;
-  width: 250px;
+  width: 70%;
   border-radius: 30px;
   background-color: #5A5A5A;
   display: inline-block;
@@ -330,7 +339,7 @@ a.player_icon:hover{
 }
 
 .player_volume .row_hr{
-  width: 100px;
+  width: 30%;
 }
 
 .row_hr_2:hover{
@@ -341,3 +350,77 @@ a.player_icon:hover{
   display: block;
 }
 /* /FOOTER */
+
+/* MEDIAQUERY */
+@media screen and (max-width: 768px) {
+  /* navbar laterale sx */
+  .navbar_list{
+    width: 60px;
+  }
+  .hidden_xs, .navbar_list span {
+    display: none;
+  }
+  .logo_classic{
+    display: none;
+  }
+  .logo_small{
+    display: block;
+  }
+  .profile_link{
+    margin-top: auto;
+    padding: 0;
+  }
+  .profile_link hr{
+    display: none;
+  }
+  .profile_link a{
+    padding-top: 15px;
+  }
+  /* /navbar laterale sx */
+
+  /* sezione musica e artisti */
+  .artist_section{
+    width: calc(100% - 60px);
+  }
+  .btn_upgrade_fixed{
+    width: calc(100% - 60px);
+  }
+  .btn_upgrade_fixed a{
+    font-size: 10px;
+  }
+  .btn_upgrade_fixed a:hover{
+    font-size: 12px;
+  }
+  .song_list ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .song_list ul>li{
+    padding: 8px;
+  }
+  .d_flex{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .container_music{
+    width: 48%;
+    padding-bottom: 20px;
+  }
+  .container_music:not(:last-child){
+    margin: 0;
+  }
+  /* /sezione musica e artisti */
+
+  /* footer */
+  .song_row{
+    padding: 2%;
+  }
+  .player_brano_img img {
+    max-width: 35px;
+  }
+  /* /footer */
+}
+
+
+/* /MEDIAQUERY */
