@@ -209,7 +209,7 @@ a{
 }
 .song_list li a:hover{
   color: #ffffff;
-  border-bottom: 2px solid #639029;
+  border-bottom: 2px solid #ADFF2F;
 }
 
 .container_music{
@@ -310,10 +310,23 @@ a.player_icon:hover{
   display: inline-block;
 }
 .row_hr_2{
+  position: relative;
   height: 100%;
   width: 30%;
   border-radius: 30px;
   background-color: #ffffff;;
+}
+
+.pallino{
+  position: absolute;
+  top: -3px;
+  right: 0;
+  display: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #000000;
 }
 
 .player_volume .row_hr{
@@ -321,7 +334,10 @@ a.player_icon:hover{
 }
 
 .row_hr_2:hover{
-  background-color: #639029;
+  background-color: #ADFF2F;
   cursor: pointer;
+}
+.row_hr_2:hover .pallino{
+  display: block;
 }
 /* /FOOTER */
