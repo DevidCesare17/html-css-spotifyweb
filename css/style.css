@@ -274,45 +274,20 @@ a{
   color: #ffffff;
 }
 
-.player_volume{
-  line-height: 50px;
-  font-size: 12px;
-}
-.song_row hr{
-  border-radius: 30px;
-  padding: 2px 50px;
-  background-color: #5A5A5A;
-  display: inline-block;
-  margin-left: 5px;
-}
-hr.hr_hover{
-  display: none;
-}
-/*
-DA FIXARE
-.player_volume hr:hover{
-  display: block;
-  border-radius: 30px;
-  padding: 2px 20px;
-  background-color: green;
-} */
 .player{
   text-align: center;
 }
 
 .player_icon_setting a{
   margin: 0 10px;
+  font-size: 14px;
 }
 a.player_icon:hover{
-  font-size: 16px;
+  font-size: 24px;
 }
 
 .player_time{
   margin: 10px 0;
-}
-
-.player_time hr{
-  padding: 2px 100px;
 }
 
 .player_time span{
@@ -320,5 +295,34 @@ a.player_icon:hover{
   font-weight: 500;
   color: #A3A3A3;
   margin: 0 10px;
+}
+
+.player_volume{
+  line-height: 50px;
+  font-size: 12px;
+}
+
+
+.row_hr{
+  height: 4px;
+  width: 250px;
+  border-radius: 30px;
+  background-color: #5A5A5A;
+  display: inline-block;
+}
+.row_hr_2{
+  height: 100%;
+  width: 30%;
+  border-radius: 30px;
+  background-color: #ffffff;;
+}
+
+.player_volume .row_hr{
+  width: 100px;
+}
+
+.row_hr_2:hover{
+  background-color: #639029;
+  cursor: pointer;
 }
 /* /FOOTER */
