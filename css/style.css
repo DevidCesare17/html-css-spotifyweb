@@ -6,8 +6,23 @@
   color: white; /*RIMUOVERE*/
 }
 
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
 h2{
+  color: #ffffff;
+  font-size: 26px;
   margin-top: 50px;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
 }
 
 .d_flex{
@@ -31,21 +46,74 @@ h2{
   width: 200px;
   height: 100%;
   background-color: #000000;
+  font-size: 14px;
+  padding: 15px;
+  padding-bottom: 0;
 }
-.logo{
-  background-color: brown;
+
+.navbar_list li:not(:last-child){
+  padding-bottom: 5px;
 }
+
+.logo img{
+  max-width: 130px;
+  height: auto;
+}
+
 .main_list{
   background-color: red;
+  margin: 10px 0;
 }
+
+.home_li::before{
+  content: "\f015";
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-size: 18px;
+  font-weight: 700;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.search_li::before{
+  content: "\f002";
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-size: 18px;
+  font-weight: 700;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.library_li::before{
+  content: "\f02d";f0fe
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-size: 18px;
+  font-weight: 700;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.playlist{
+  height: calc(100% - 193px);
+  background-color: green;
+}
+
 .playlist_list{
   height: 70%;
   overflow-y: auto;
+  margin-top: 10px;
 }
-.playlist{
-  height: calc(100% - 132px);
-  background-color: green;
+
+.create_playlist::before{
+  content: "\f0fe";
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-size: 34px;
+  font-weight: 700;
+  vertical-align: middle;
+  margin-right: 10px;
 }
+
 .profile_link{
   height: 60px;
   width: 100%;
@@ -74,7 +142,18 @@ h2{
   height: 80px;
   width: calc(100% - 200px);
   background-color: #080B12;
-  padding-right: 20px;
+  padding-right: 40px;
+}
+
+.btn_upgrade_fixed a{
+  font-size: 14px;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  padding: 5px 10px;
+}
+.btn_upgrade_fixed a:hover{
+  background-color: #ffffff;
+  color: #080B12;
 }
 
 .music_choose{
@@ -85,7 +164,6 @@ h2{
 }
 
 .song_list ul{
-  list-style: none;
   text-align: center;
 }
 
