@@ -3,7 +3,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  color: white; /*RIMUOVERE*/
 }
 
 body{
@@ -14,6 +13,11 @@ h2{
   color: #ffffff;
   font-size: 26px;
   margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+h3{
+  color: #ffffff;
 }
 
 ul{
@@ -23,6 +27,7 @@ ul{
 
 a{
   text-decoration: none;
+  color: #A3A3A3;
 }
 
 .d_flex{
@@ -32,6 +37,23 @@ a{
 
 .wrapper{
   height: 100vh;
+}
+
+.genre{
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.subtitle{
+  color: #A3A3A3;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.circle_img{
+  border-radius: 50%;
 }
 /* /GENERAL */
 
@@ -47,6 +69,7 @@ a{
   height: 100%;
   display: flex;
   flex-direction: column;
+  color: #A3A3A3;
   background-color: #000000;
   font-size: 14px;
   padding: 15px;
@@ -98,6 +121,7 @@ a{
 .playlist{
   height: 100%;
   background-color: green;
+  overflow: hidden;
 }
 
 .playlist_list{
@@ -134,6 +158,13 @@ a{
   overflow-y: auto;
 }
 
+.artist_section small{
+  color: #A3A3A3;
+  font-size: 11px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
 .under_upgrade{
   height: 80px;
   background-color: #080B12;
@@ -153,6 +184,7 @@ a{
 }
 
 .btn_upgrade_fixed a{
+  color: #ffffff;
   font-size: 14px;
   border: 2px solid #ffffff;
   border-radius: 30px;
@@ -164,7 +196,6 @@ a{
 
 .music_choose{
   height: calc(100% - 80px);
-  margin-top: 80px;
   padding: 20px;
 }
 
@@ -174,15 +205,24 @@ a{
 
 .song_list ul>li{
   display: inline-block;
+  font-size: 12px;
+  padding: 0 10px;
+}
+.song_list li a:hover{
+  color: #ffffff;
+  border-bottom: 2px solid #639029;
 }
 
-.recently_played{
-  justify-content: space-between;
+.container_music{
+  width: calc(100%/6);
 }
-.artist_img{
-  width: 150px;
-  height: 150px;
-  background-color: red;
+.container_music:not(:last-child){
+  margin-right: 30px;
+}
+
+.artist_img img{
+  height: auto;
+  width: 100%;
 }
 .container_music p{
   text-align: center;
