@@ -242,4 +242,83 @@ a{
   background-color: #282828;
   padding: 15px;
 }
+
+.player_brano{
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+
+.player_brano_img img{
+  width: 50px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.brano_nome{
+  margin: 0 10px;
+}
+.brano_nome .genre{
+  font-size: 12px;
+  margin: 0;
+}
+.brano_nome small{
+  font-size: 10px;
+  color: #A3A3A3;
+}
+
+.song_row a{
+  margin-left: 10px;
+}
+.song_row a:hover{
+  color: #ffffff;
+}
+
+.player_volume{
+  line-height: 50px;
+  font-size: 12px;
+}
+.song_row hr{
+  border-radius: 30px;
+  padding: 2px 50px;
+  background-color: #5A5A5A;
+  display: inline-block;
+  margin-left: 5px;
+}
+hr.hr_hover{
+  display: none;
+}
+/*
+DA FIXARE
+.player_volume hr:hover{
+  display: block;
+  border-radius: 30px;
+  padding: 2px 20px;
+  background-color: green;
+} */
+.player{
+  text-align: center;
+}
+
+.player_icon_setting a{
+  margin: 0 10px;
+}
+a.player_icon:hover{
+  font-size: 16px;
+}
+
+.player_time{
+  margin: 10px 0;
+}
+
+.player_time hr{
+  padding: 2px 100px;
+}
+
+.player_time span{
+  font-size: 10px;
+  font-weight: 500;
+  color: #A3A3A3;
+  margin: 0 10px;
+}
 /* /FOOTER */
