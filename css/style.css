@@ -204,7 +204,7 @@ a:hover{
 }
 .song_list ul>li{
   display: inline-block;
-  height: 15px;
+  height: 20px;
   font-size: 12px;
   font-weight: 600;
   padding: 0 10px;
