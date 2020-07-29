@@ -192,6 +192,7 @@ a{
   width: calc(100% - 200px);
   background-color: rgba(0, 0, 0, 0.5);
   padding-right: 40px;
+  z-index: 2;
 }
 
 .btn_upgrade_fixed a{
@@ -397,6 +398,9 @@ a.player_icon:hover{
 
 /* MEDIAQUERY */
 @media screen and (max-width: 768px) {
+  h2{
+    font-size: 20px;
+  }
   /* navbar laterale sx */
   .navbar_list{
     width: 60px;
@@ -441,7 +445,7 @@ a.player_icon:hover{
     justify-content: center;
   }
   .song_list ul>li{
-    padding: 8px;
+    padding: 15px;
   }
   .d_flex{
     flex-wrap: wrap;
@@ -463,8 +467,73 @@ a.player_icon:hover{
   .player_brano_img img {
     max-width: 35px;
   }
+  .brano_nome .genre{
+    font-size: 10px;
+  }
+  .brano_nome small{
+    font-size: 8px;
+  }
+  .folder_pref{
+    flex-direction: column;
+  }
+  .folder_pref a{
+    margin: 0;
+    padding-bottom: 5px;
+  }
+  .player_icon_setting a{
+    margin: 2px;
+  }
+  .player_time span{
+    font-size: 8px;
+    margin: 0;
+  }
+  .player_time .row_hr{
+    width: 50%;
+  }
+  .player_volume a{
+    margin: 0;
+    text-align: left;
+  }
+  .player_volume .row_hr{
+    width: 40%;
+  }
   /* /footer */
 }
 
+  @media screen and (max-width: 992px) and (min-width: 769px){
+  .song_list ul>li{
+    padding: 15px;
+  }
+  .folder_pref{
+    flex-direction: column;
+  }
+  .folder_pref a{
+    padding-bottom: 5px;
+  }
+  .d_flex{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .container_music{
+    width: 48%;
+    padding-bottom: 30px;
+  }
+  .container_music:not(:last-child){
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 993px){
+  .d_flex{
+    flex-wrap: wrap;
+  }
+  .container_music{
+    width: 22%;
+    padding-bottom: 20px;
+  }
+  .container_music:not(:last-child){
+    margin-right: 15px;
+  }
+}
 
 /* /MEDIAQUERY */
