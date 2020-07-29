@@ -58,6 +58,7 @@ a:hover{
 .circle_img{
   border-radius: 50%;
 }
+
 /* /GENERAL */
 
 /* MAIN */
@@ -203,6 +204,7 @@ a:hover{
 }
 .song_list ul>li{
   display: inline-block;
+  height: 15px;
   font-size: 12px;
   font-weight: 600;
   padding: 0 10px;
@@ -378,7 +380,7 @@ a.player_icon:hover{
   .navbar_list{
     width: 60px;
   }
-  .hidden_xs, .navbar_list span {
+  [class*="hidden"], .navbar_list span {
     display: none;
   }
 
@@ -431,11 +433,12 @@ a.player_icon:hover{
   }
 
   .container_music{
-    width: 48%;
+    width: 50%;
     padding-bottom: 20px;
   }
   .container_music:not(:last-child){
     margin: 0;
+    padding-right: 10px;
   }
   /* /sezione musica e artisti */
 
@@ -488,21 +491,26 @@ a.player_icon:hover{
 }
 
   @media screen and (max-width: 992px) and (min-width: 769px){
+    [class*="hidden_sm"]{
+      display: none;
+    }
+
   .song_list ul>li{
     padding: 15px;
   }
-  
+
   .d_flex{
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .container_music{
-    width: 48%;
+    width: 50%;
     padding-bottom: 30px;
   }
   .container_music:not(:last-child){
     margin: 0;
+    padding-right: 15px;
   }
 
   .folder_pref{
@@ -518,12 +526,17 @@ a.player_icon:hover{
     flex-wrap: wrap;
   }
 
+  [class*="hidden_md"]{
+    display: none;
+  }
+
   .container_music{
-    width: 22%;
+    width: 25%;
     padding-bottom: 20px;
   }
   .container_music:not(:last-child){
-    margin-right: 15px;
+    margin: 0;
+    padding-right: 10px;
   }
 }
 /* /MEDIAQUERY */
