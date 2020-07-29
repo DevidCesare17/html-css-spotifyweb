@@ -238,13 +238,15 @@ a{
 
 
 .container_music{
-  position: relative;
   width: calc(100%/6);
 }
 .container_music:not(:last-child){
   margin-right: 30px;
 }
 
+.artist_img{
+  position: relative;
+}
 .artist_img img{
   height: auto;
   width: 100%;
