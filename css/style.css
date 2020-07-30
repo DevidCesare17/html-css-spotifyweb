@@ -234,6 +234,7 @@ a:hover{
 
 .artist_img{
   position: relative;
+  line-height: 0;
 }
 .artist_img img{
   height: auto;
